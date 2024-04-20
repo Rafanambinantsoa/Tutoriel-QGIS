@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  /* --primary-color: #17b255;
+  --secondary-color: #36f382; */
+  --primary-color: rgb(39, 202, 104);
+  --secondary-color: rgb(71, 239, 138);
+  --text-primary: rgb(58, 58, 58);
+  --text-secondary: rgb(88, 88, 88);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  height: 75vh;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 160, 65, 0.8),
+      rgba(30, 230, 110, 0.8)
+    ),
+    url(img/carte-du-monde.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.nav-div {
+  position: fixed;
+  z-index: 10;
+  width: 90vw;
+  margin-left: 50px;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}
+
+/* .navigation-div {
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+} */
+
+.navigation {
+  display: none;
+}
+
+.logo-img {
+  width: 75px;
+  height: 75px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(0, 160, 65, 0.8),
+    rgba(30, 230, 110, 0.8)
+  );
+}
+
+.titre-div {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.titre-div h1 {
+  font-size: 75px;
+}
+
+.titre-div span {
+  font-family: "Nunito", sans-serif;
+}
+
+/*section presentation*/
+.presentation {
+  margin: 50px 150px 0px 150px;
+  display: flex;
+  align-items: top;
+  gap: 75px;
+}
+
+.pres-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pres-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.pres-paragraph {
+  margin: 20px 0px 20px 20px;
+  color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.pres-paragraph h4 {
+  margin-bottom: -15px;
+  font-size: 20px;
+  color: rgb(77, 159, 232);
+}
+
+.pres-paragraph a {
+  text-decoration: none;
+  color: rgb(39, 126, 202);
+}
+
+.separate {
+  border: 1px solid rgb(77, 159, 232);
+}
+
+.pres-paragraph h5 {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(77, 159, 232);
+}
+
+.stylised-p {
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0px;
+  background-color: rgb(240, 240, 240);
+}
+
+.stylised-p span {
+  margin-right: 10px;
+  padding: 5px 2.5px;
+  background-color: var(--primary-color);
+}
+
+.aide-div {
+  position: relative;
+}
+
+.aide-img {
+  position: absolute;
+  top: 20;
+  right: 0;
+  width: 300px;
+  height: 350px;
+  display: none;
+}
+
+.stylised-p:hover + .aide-img {
+  display: block;
+}
+
+.p-italic {
+  display: none;
+  font-weight: 400;
+  font-style: italic;
+  margin-left: 20px;
+}
+
+#toggle-italic:target {
+  display: block;
+}
+
+#toggle-paragraph {
+  cursor: pointer;
+}
+
+.sponsors {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.images-container {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.images-container img {
+  margin-right: 20px;
+}
+
+.plan-div {
+  width: 250px;
+  background-color: var(--primary-color);
+  color: white;
+  font-family: "Nunito", sans-serif;
+}
+
+.plan-titre {
+  margin-left: 15px;
+}
+
+.pres-right ul {
+  list-style: none;
+}
+
+.pres-right li {
+  margin: 20px 0;
+}
+
+.pres-right a {
+  text-decoration: none;
+  color: rgb(77, 159, 232);
+}
+
+.plan-img {
+  margin: 45px 0;
+}
+
+.btn-pres {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+
+  margin: 0 auto;
+  color: white;
+  transition: 200ms;
+  border-radius: 25px;
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  -ms-transition: 200ms;
+  -o-transition: 200ms;
+}
+
+.btn-pres:hover {
+  transition: 200ms;
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  -ms-transition: 200ms;
+  -o-transition: 200ms;
+}
+
+.btn-btn {
+  padding: 10px 15px;
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.sponsors {
+  overflow: hidden;
+}
+
+.sponsors article {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  -webkit-animation: scroll 20s linear infinite;
+}
+
+.sponsors ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.sponsors li {
+  background-color: rgba(221, 221, 221, 0.8);
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 400px;
+  height: 150px;
+}
+
+footer {
+  height: 50vh;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 160, 65, 0.8),
+      rgba(30, 230, 110, 0.8)
+    ),
+    url(img/footer_map.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 100px;
+  padding: 50px 0px;
+}
+
+.footer h2 {
+  color: white;
+  font-size: 45px;
+}
+
+.footer span {
+  font-family: "Nunito", sans-serif;
+}
+
+.footer ul {
+  text-decoration: none;
+}
+
+.footer li {
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 30px 0;
+  list-style: none;
+  cursor: pointer;
+  transition: 200ms;
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  -ms-transition: 200ms;
+  -o-transition: 200ms;
+}
+
+.footer li:hover {
+  transition: 200ms;
+  color: rgb(60, 221, 165);
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  -ms-transition: 200ms;
+  -o-transition: 200ms;
+}
+
+.footer h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+}

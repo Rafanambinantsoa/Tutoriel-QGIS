@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="img/logo_letg.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tutoriel QGIS</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-div">
+        <img
+          src="img/logo_letg.png"
+          alt="logo_letg"
+          class="logo-img"
+        />
+      </div>
+
+      <div class="titre-div">
+        <img src="img/logo_qgis_3_22.png" alt="qgis" />
+        <h1><span>Tutoriel</span> QGIS</h1>
+      </div>
+    </header>
+
+    <section class="presentation">
+      <div class="pres-left">
+        <div class="pres-paragraph">
+          <h2 class="pres-titre"><span>P</span>RESENTATION</h2>
+          <h4>En quelque mots</h4>
+          <div class="separate"></div>
+          <p>
+            Ce tutoriel QGIS a été créé par le pôle Analyse et Représentation
+            des données de l'UMR PASSAGES et est aujourd'hui maintenu par le
+            RASTeR de l'UMR LETG. Son but est de permettre aux débutants en SIG
+            de s'initier à ceux-ci via le logiciel libre QGIS. Pour installer
+            QGIS, rendez-vous sur
+            <a href="http://www.qgis.org/.">http://www.qgis.org/.</a>
+          </p>
+          <p>
+            Le tutoriel est mis à jour pour chaque version maintenue « à long
+            terme » de QGIS : actuellement il s'agit de la version
+            <a
+              class="ext"
+              target="_blank"
+              href="https://www.qgis.org/fr/site/forusers/visualchangelog322/index.html"
+              >3.22 'Białowieża'</a
+            >
+            .
+          </p>
+        </div>
+
+        <div class="pres-paragraph">
+          <h4>Accès au tutoriel</h4>
+          <div class="separate"></div>
+
+          <p>
+            Le tutoriel comporte 11 parties auxquelles vous pouvez accéder par
+            le plan dans la partie droite de la page, ou bien via
+            <a href="#"> le plan détaillé</a> .
+          </p>
+          <p>
+            Chaque partie peut être réalisée indépendamment des autres ;
+            cependant, la progression présentée suit un ordre logique.
+          </p>
+          <p>
+            Si vous recherchez une notion précise, utilisez
+            <a href="#">l'index</a> .
+          </p>
+        </div>
+
+        <div class="pres-paragraph">
+          <h4>Mode d'emploi</h4>
+          <div class="separate"></div>
+          <h5>Manipulation</h5>
+
+          <p>
+            Tout au long du tutoriel, les parties décrivant des manipulations à
+            effectuer dans QGIS sont différenciées par une bordure bleue et un
+            fond bleu-gris :
+          </p>
+
+          <div class="stylised-p">
+            <p>
+              <span></span>
+              Ceci décrit une manipulation à effectuer dans QGIS.
+            </p>
+          </div>
+
+          <p>
+            Les données nécessaires pour effectuer ces manipulations sont
+            accessibles dans la rubrique <a href="#">téléchargement</a>.
+          </p>
+
+          <h5>Aide</h5>
+
+          <p>
+            Quand une partie du texte apparaît soulignée en pointillés en bleu
+            foncé, si vous passez la souris dessus, une image apparaît pour vous
+            aider par exemple à trouver l'emplacement d'un menu ou d'un bouton
+            dans QGIS.
+          </p>
+
+          <div class="aide-div">
+            <div class="stylised-p">
+              <p>
+                <span></span>
+                Sauvegardez votre projet sous un nouveau nom :
+                <a href="#" class="aide-a">
+                  Menu Projet → Enregistrer sous...</a
+                >
+              </p>
+            </div>
+            <img src="img/aide.jpg" alt="aide" class="aide-img" />
+          </div>
+
+          <h5>Question/réponse</h5>
+
+          <p>
+            Des questions vous seront posées tout au long du tutoriel ; les
+            réponses sont visibles en cliquant sur la question.
+          </p>
+
+          <p id="toggle-paragraph">
+            - Pourquoi Jimi Hendrix connaît-il tous les symboles des cartes ?
+          </p>
+          <p id="toggle-italic" class="p-italic">
+            Parce-que c'est une légende !
+          </p>
+
+          <h5>Liens</h5>
+
+          <p>
+            Les liens internes au <a href="#">tutoriel</a> sont affichés en
+            bleu, les
+            <a href="https://fr.wikipedia.org/wiki/Lien">liens</a> externes sont
+            en gris et s'ouvriront dans une nouvelle fenêtre ou onglet.
+          </p>
+
+          <div class="btn-pres">
+            <button class="btn-btn">C'est parti</button>
+          </div>
+
+          <div class="separate"></div>
+        </div>
+      </div>
+
+      <div class="pres-right">
+        <div class="plan-div">
+          <h2 class="plan-titre">Plan</h2>
+        </div>
+
+        <div>
+          <ul>
+            <li>
+              <a href="#"><span>I - </span>Prise en main</a>
+            </li>
+            <li>
+              <a href="#"><span>II - </span>Géodésie</a>
+            </li>
+            <li>
+              <a href="#"><span>III - </span>Recherche et ajout de données</a>
+            </li>
+            <li>
+              <a href="#"><span>IV - </span>Géoréférencement</a>
+            </li>
+            <li>
+              <a href="#"><span>V - </span>Numérisation</a>
+            </li>
+            <li>
+              <a href="#"><span>VI - </span>Requêtes</a>
+            </li>
+            <li>
+              <a href="#"><span>VII - </span>Calcul de champs</a>
+            </li>
+            <li>
+              <a href="#"><span>VIII - </span>Jointures</a>
+            </li>
+            <li>
+              <a href="#"><span>XI - </span>Analyse spatiale</a>
+            </li>
+            <li>
+              <a href="#"><span>X - </span>Représentation et mise en page</a>
+            </li>
+            <li>
+              <a href="#"><span>XI - </span>Automatisation de traitements</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="plan-img">
+          <img src="img/carte-du-monde.jpg" alt="" width="250" />
+        </div>
+      </div>
+    </section>
+
+    <section class="sponsors">
+      <article>
+        <div>
+          <ul>
+            <li>
+              <img
+                src="img/logo_qgis_3_22.png"
+                width="100"
+                height="100"
+              />
+            </li>
+            <li>
+              <img src="img/logo_letg.png" width="125" height="125" />
+            </li>
+            <li>
+              <img
+                src="img/logo_ouvrir.png"
+                width="200"
+                height="100"
+              />
+            </li>
+            <li>
+              <img
+                src="img/logo_passages.png"
+                width="250"
+                height="100"
+              />
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <img
+                src="img/logo_qgis_3_22.png"
+                width="100"
+                height="100"
+              />
+            </li>
+            <li>
+              <img src="img/logo_letg.png" width="125" height="125" />
+            </li>
+            <li>
+              <img
+                src="img/logo_ouvrir.png"
+                width="200"
+                height="100"
+              />
+            </li>
+            <li>
+              <img
+                src="img/logo_passages.png"
+                width="250"
+                height="100"
+              />
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div>
+          <h2><span>Tutorial</span> QGIS</h2>
+          <img src="img/logo_qgis_3_22.png" alt="" />
+        </div>
+        <div>
+          <h4>Présentantion</h4>
+          <ul>
+            <li>Accueil</li>
+            <li>Qgis</li>
+            <li>Blog</li>
+            <li>Equipe</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>000-000-000</li>
+            <li>qgis@gmail.com</li>
+            <li>EMIT Université Fianarantsoa</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
